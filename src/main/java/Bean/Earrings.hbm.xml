@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Bean.Earrings" table="earrings" schema="public" catalog="jewelry">
+        <id name="id">
+            <column name="id" sql-type="integer"/>
+        </id>
+        <property name="title">
+            <column name="title" sql-type="varchar(30)" length="30"/>
+        </property>
+        <property name="style">
+            <column name="style" sql-type="varchar(30)" length="30"/>
+        </property>
+        <property name="designer">
+            <column name="designer" sql-type="varchar(30)" length="30"/>
+        </property>
+        <property name="stone">
+            <column name="stone" sql-type="varchar(30)" length="30"/>
+        </property>
+        <property name="metal">
+            <column name="metal" sql-type="varchar(30)" length="30"/>
+        </property>
+        <property name="price">
+            <column name="price" sql-type="integer"/>
+        </property>
+    </class>
+</hibernate-mapping>
